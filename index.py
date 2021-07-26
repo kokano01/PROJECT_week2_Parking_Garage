@@ -27,7 +27,7 @@ class ParkingGarage():
             try:
                 pymt2 = int(input("Enter payment amount:    "))                
                 self.tickets[pymtNum-1] = 2
-                print(" Your ticket has been paid. You have 15 minutes to depart. Thank You!")
+                print("Your ticket has been paid. You have 15 minutes to depart. Thank You!")
             except (SyntaxError, ValueError, IndexError):
                 print("You didn't enter a valid number")
         elif self.tickets[pymtNum-1] == 0 or 2:
