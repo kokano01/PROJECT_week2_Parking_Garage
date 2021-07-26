@@ -12,6 +12,7 @@ class ParkingGarage():
             if self.tickets[ticket-1] == 0:
                     self.tickets[ticket-1] = 1
                     print(self.tickets)
+                    print(f'\nPlease park your vehicle in Parking Number [{ticket}]')
                 
             elif self.tickets[ticket-1] == 1 or 2:
                 print(f"Ticket number {ticket} is already taken. Please choose an available ticket number.")
@@ -40,7 +41,7 @@ class ParkingGarage():
             reticket = int(input("\nPlease enter your ticket number to leave: (1 - 6)    "))
             # ----CHECK ---- if ticket is paid, then change the value to 0.        
             if self.tickets[reticket-1] == 0:
-                print(f"Parking number {reticket} is already vacant. Please enter the correct ticket number.")
+                print(f"Parking number [{reticket}] is already vacant. Please enter the correct ticket number.")
             elif self.tickets[reticket-1] == 1:
                 x = input("You have not paid yet. Would you like to pay right now? (yes/no)  ")
                 if x.lower() == "yes":
