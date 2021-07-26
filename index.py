@@ -15,7 +15,7 @@ class ParkingGarage():
                     print(f'\nPlease park your vehicle in Parking Number [{ticket}]')
                 
             elif self.tickets[ticket-1] == 1 or 2:
-                print(f"Ticket number {ticket} is already taken. Please choose an available ticket number.")
+                print(f"Ticket number [{ticket}] is already taken. Please choose an available ticket number.")
         except (SyntaxError, ValueError, IndexError):
                 print("You didn't enter a valid number")
         
